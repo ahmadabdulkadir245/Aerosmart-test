@@ -27,8 +27,8 @@ function Banner() {
       pagination={{
         clickable: true,
       }}
-      navigation={true}
-      modules={[Pagination, Navigation, Thumbs]}
+      // navigation={true}
+      modules={[Pagination, Thumbs]}
       className="mySwiper"
     >
         {banners.map(banner => (

@@ -20,6 +20,58 @@ export default function Home() {
 
     <main>
      <Banner/>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
+     <p>lorem500</p>
      </main>
     </div>
 

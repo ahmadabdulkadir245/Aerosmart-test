@@ -10,19 +10,17 @@ function SideBar({ openSideBar, showSearch }) {
     router.push("/login");
   };
   return (
-    <div className='text-[#0e1318]  capitalize font-lg  '>
+    <>
       {!openSideBar ? (
-        <div className={`lg:hidden fixed top-0 left-0  w-full lg:w-1/3 bg-gray-50 h-screen    transition-transform duration-700 ease-in-out translate-y-full z-50 ${showSearch ? 'mt-[120px]' : 'mt-[60px]'} overflow-y-scroll pb-12`}>
-          {/* <SidebarListItem Icon={AiOutlineShop} title={"orders"} /> */}
+        <div className={`lg:hidden fixed top-0 left-0 w-full h-screen  bg-gray-50     transition-transform duration-700 ease-in-out translate-y-full  ${showSearch ? 'mt-[120px]' : 'mt-[60px] '} z-50` }>
          <SideBarLinks/>
-
         </div>
       ) : (
-        <div className={`lg:hidden fixed top-0 left-0  w-full lg:w-1/3 bg-gray-50 h-screen transition-transform duration-700 ease-in-out translate-y-0 z-50 ${showSearch ? 'mt-[120px]' : 'mt-[60px] '} ${showSearch ? 'mb-[120px]' : 'mb-[60px] '} overflow-y-scroll  pb-14`}>
+        <div className={`lg:hidden fixed top-0 left-0 w-full ${showSearch ? 'h-[85vh]' : 'h-[92vh]'}  bg-gray-50 transition-transform duration-700 ease-in-out translate-y-0  z-50 ${showSearch ? 'mt-[120px]' : 'mt-[60px]'}`}>
          <SideBarLinks/>
         </div>
       )}
-    </div>
+    </>
   );
 }
 

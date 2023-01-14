@@ -52,7 +52,7 @@ function Navigation() {
                 <input
                   type='text'
                   className='py-5 px-4 h-full w-6 flex-grow  flex-shrink rounded-l-sm focus:outline-none bg-gray-300 font-play text-gray-700'
-                  placeholder='Search on Aerosmart'
+                  placeholder='search on Aerosmart'
                   
                 />
                 <BiSearchAlt className='h-12 w-12 p-3  text-gray-500 transition duration-200 ease-in' />
@@ -100,7 +100,7 @@ function Navigation() {
                   <input
                     type='text'
                     className='px-2 py-[24px] h-full w-6 flex-grow  flex-shrink rounded-l-md focus:outline-none bg-gray-300 font-play text-gray-700'
-                    placeholder='Search Century Designs'
+                    placeholder='search on Aerosmart'
                     // value={searchWord}
                     // onChange={searchHandler}
                   />

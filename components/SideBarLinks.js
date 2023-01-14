@@ -24,7 +24,6 @@ function SideBarLinks() {
         <SideBarLink Icon={GiConcreteBag} title={'cement'}/>
         <SideBarLink Icon={AiOutlineShop} title={'stones'}/>
 
-
     </div>
   )
 }

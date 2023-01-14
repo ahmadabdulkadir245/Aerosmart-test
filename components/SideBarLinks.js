@@ -8,7 +8,7 @@ import { MdConstruction } from 'react-icons/md'
 
 function SideBarLinks() {
   return (
-    <div className='py-1 px-[10px] text-gray-500 capitalize text-md'>
+    <div className='py-1 px-[10px] text-gray-500 capitalize text-md pb-10'>
         <div className='flex justify-between '>
             <button className='rounded-md border-2 border-gray-400 py-2 w-[47%]  '>Login</button>
             <button className='rounded-md border-2 border-gray-400 py-2 w-[47%]  '>Sign Up</button>
@@ -19,10 +19,12 @@ function SideBarLinks() {
         <SideBarLink Icon={RiUser3Line} title={'my account'}/>
         <SideBarLink Icon={AiOutlineShop} title={'orders'}/>
         <SideBarLink Icon={CiShoppingCart} title={'cart'}/>
-        <SideBarLink Icon={GiWoodBeam} title={'wood'}/>
+        <SideBarLink Icon={GiWoodBeam} title={'woods'}/>
         <SideBarLink Icon={MdConstruction} title={'metals'}/>
         <SideBarLink Icon={GiConcreteBag} title={'cement'}/>
         <SideBarLink Icon={AiOutlineShop} title={'stones'}/>
+
+
     </div>
   )
 }

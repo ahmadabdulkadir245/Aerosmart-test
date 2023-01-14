@@ -4,7 +4,7 @@ import SideBarLink from './SideBarLink'
 
 function SideBarLinks() {
   return (
-    <div className='py-4 px-[10px] text-gray-500 capitalize'>
+    <div className='py-1 px-[10px] text-gray-500 capitalize'>
         <div className='flex justify-between '>
             <button className='rounded-md border-2 border-gray-400 py-2 w-[47%]  '>Login</button>
             <button className='rounded-md border-2 border-gray-400 py-2 w-[47%]  '>Sign Up</button>

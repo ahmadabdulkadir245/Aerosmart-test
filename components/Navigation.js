@@ -24,7 +24,7 @@ function Navigation() {
   return (
 <>
 {/* sidebar menu */}
-<SideBar openSideBar={openSideBar} />
+<SideBar openSideBar={openSideBar} showSearch={showSearch} />
     {/* navigation */}
   <nav className={`flex items-center justify-between flex-wrap bg-gray-50 py-4 ${showSearch ? '': 'shadow-lg'}  lg:shadow-lg px-[10px] lg:px-[50px]`}>
   

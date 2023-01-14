@@ -2,9 +2,10 @@ import React from 'react'
 import { AiOutlineShop } from 'react-icons/ai'
 import { RiUser3Line } from 'react-icons/ri'
 import { CiShoppingCart } from 'react-icons/ci'
-import { GiConcreteBag, GiWoodBeam } from 'react-icons/gi'
+import { GiConcreteBag, GiOpeningShell, GiWoodBeam } from 'react-icons/gi'
 import SideBarLink from './SideBarLink'
 import { MdConstruction } from 'react-icons/md'
+import { BsBricks } from 'react-icons/bs'
 
 function SideBarLinks() {
   return (
@@ -22,7 +23,8 @@ function SideBarLinks() {
         <SideBarLink Icon={GiWoodBeam} title={'woods'}/>
         <SideBarLink Icon={MdConstruction} title={'metals'}/>
         <SideBarLink Icon={GiConcreteBag} title={'cement'}/>
-        <SideBarLink Icon={AiOutlineShop} title={'stones'}/>
+        <SideBarLink Icon={GiOpeningShell} title={'stones'}/>
+        <SideBarLink Icon={BsBricks} title={'bricks'}/>
 
     </div>
   )

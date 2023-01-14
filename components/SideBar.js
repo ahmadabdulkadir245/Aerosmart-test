@@ -18,7 +18,7 @@ function SideBar({ openSideBar, showSearch }) {
 
         </div>
       ) : (
-        <div className={`lg:hidden fixed top-0 left-0  w-full lg:w-1/3 bg-gray-50 h-screen transition-transform duration-700 ease-in-out translate-y-0 z-50 ${showSearch ? 'mt-[120px]' : 'mt-[60px]'} overflow-y-scroll b-10`}>
+        <div className={`lg:hidden fixed top-0 left-0  w-full lg:w-1/3 bg-gray-50 h-screen transition-transform duration-700 ease-in-out translate-y-0 z-50 ${showSearch ? 'mt-[120px]' : 'mt-[60px] '} overflow-y-scroll  pb-11`}>
          <SideBarLinks/>
         </div>
       )}

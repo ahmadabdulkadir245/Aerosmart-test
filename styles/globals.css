@@ -17,12 +17,39 @@
 }
 
 
-/* @media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.pulse {
+  filter: blur(3px);
+  animation: leftToRight 2s infinite;
+}
+.skeleton-animation {
+  @apply absolute h-full w-full  bg-white pulse overflow-hidden z-[40];
+}
+
+@layer components {
+@keyframes leftToRight {
+  0% {
+    transform: translateX(0px);
+    opacity: 0.4;
   }
-  body {
-    color: white;
-    background: black;
+  20% {
+    transform: translateX(150px);
+    opacity: 0;
   }
-} */
+  40% {
+    transform: translateX(0px);
+    opacity: 0.4;
+  }
+  60% {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(0px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(150px);
+    opacity: 0.4;
+  }
+}
+}

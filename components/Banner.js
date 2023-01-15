@@ -33,7 +33,7 @@ function Banner() {
     >
         {banners.map(banner => (
         <SwiperSlide key={banner.id} >
-            <div className='h-[28vh] w-[95%] m-auto rounded-md'>
+            <div className='h-[30vh] w-[95%] m-auto rounded-md'>
         <img src={banner.image} className='w-full h-full rounded-md object-cover ' />
             </div>
       </SwiperSlide>

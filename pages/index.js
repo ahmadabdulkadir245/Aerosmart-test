@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
+import CategoryIcons from '../components/CategoryIcons'
 import Header from '../components/Header'
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
 
     <main>
      <Banner/>
+     <CategoryIcons/>
      </main>
     </div>
 

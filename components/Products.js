@@ -13,10 +13,10 @@ const Products = ({ id, title, price, description, category, image }) => {
     <>
     <>
       {loading ? (
-        <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear rounded-md'>
+        <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear rounded-md text-gray-500'>
           <Link href={`/shoes/${id}`}>
             {/* <a> */}
-              <p className='absolute top-2 right-2 text-xs italic text-gray-500 z-20'>
+              <p className='absolute top-2 right-2 text-xs italic text-gray-400 z-20'>
                 {category}
               </p>
               <div className='relative w-full h-[160px]  overflow-hidden rounded-t-md'>
@@ -24,7 +24,7 @@ const Products = ({ id, title, price, description, category, image }) => {
               </div>
             {/* </a> */}
           </Link>
-          <h4 className='my-1 lg:my-3  px-2 capitalize'>{title}</h4>
+          <h4 className='my-1 lg:my-3  px-2 capitalize '>{title}</h4>
           <div className='flex  px-2'>
             {/* {Array(rating)
               .fill(1)
@@ -33,7 +33,7 @@ const Products = ({ id, title, price, description, category, image }) => {
               ))} */}
           </div>
           <p className='text-sm font-rajdhani my-[2px]  md:my-2 truncate  px-2'>{description}</p>
-          <div className=' text-sm font-play px-2'>
+          <div className=' text-sm font-play px-2 text-gray-600'>
             N{price}
           </div>
           {/* {hasPrime && (

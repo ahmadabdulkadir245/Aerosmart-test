@@ -13,14 +13,14 @@ const Products = ({ id, title, price, description, category, image }) => {
     <>
     <>
       {loading ? (
-        <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear'>
+        <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear rounded-md'>
           <Link href={`/shoes/${id}`}>
             {/* <a> */}
               <p className='absolute top-2 right-2 text-xs italic text-gray-500 z-20'>
                 {category}
               </p>
-              <div className='relative w-full h-[160px]  overflow-hidden '>
-                <Image src={image} alt={image} layout='fill' />
+              <div className='relative w-full h-[160px]  overflow-hidden rounded-t-md'>
+                <Image src={image} alt={image} layout='fill' className=""/>
               </div>
             {/* </a> */}
           </Link>
@@ -32,8 +32,8 @@ const Products = ({ id, title, price, description, category, image }) => {
                 <StarIcon key={id} className='h-4 text-yellow-500' />
               ))} */}
           </div>
-          <p className='text-sm my-1 md:my-2 truncate  px-2'>{description}</p>
-          <div className='font-light text-sm font-ptserif px-2'>
+          <p className='text-sm font-rajdhani my-[2px]  md:my-2 truncate  px-2'>{description}</p>
+          <div className=' text-sm font-play px-2'>
             N{price}
           </div>
           {/* {hasPrime && (
@@ -50,7 +50,7 @@ const Products = ({ id, title, price, description, category, image }) => {
         </div>
       ) : (
         <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear animate-pulse'>
-          <div className='absolute h-full w-10  bg-white pulse overflow-hidden z-[40]'></div>
+          <div className='absolute h-full w-10  bg-white pulse overflow-hidden z-[40] rounded-md'></div>
 
           <div className='absolute top-2 right-2 w-12 h-2 rounded-md z-20 bg-gray-200'></div>
           <div className='relative w-full h-[160px] bg-gray-300  overflow-hidden '></div>

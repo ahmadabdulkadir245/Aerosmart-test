@@ -1,7 +1,8 @@
-import React from 'react'
 import Products from './Products'
+import {BANNERS} from '../db/banner-image'
 
 const ProductFeed = () => {
+    const productData = BANNERS
   return (
     <div
     className='grid grid-cols-2 grid-flow-row-dense md:grid-cols-3 lg:grid-cols-3

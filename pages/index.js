@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Banner from '../components/Banner'
 import CategoryIcons from '../components/CategoryIcons'
 import Header from '../components/Header'
+import ProductFeed from '../components/ProductFeed'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
     <main>
      <Banner/>
      <CategoryIcons/>
+     <ProductFeed/>
      </main>
     </div>
 

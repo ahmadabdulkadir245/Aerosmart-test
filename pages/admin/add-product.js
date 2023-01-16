@@ -3,7 +3,7 @@ import Head from "next/head"
 const AddProduct = () => {
     const isUpdate = false
   return (
-    <>
+    <div classname="mb-10">
           <Head>
            {/* fonts import */}
            <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -13,7 +13,7 @@ const AddProduct = () => {
           />
 
       </Head>
-    <form method="post" action="/admin/add-product" classname="mb-10">
+    <form method="post" action="/admin/add-product" >
       <h2 className="text-center text-xl uppercase text-gray-500  my-5 [word-spacing: 10px] ">
         {isUpdate ? 'add product' : 'update product'}
         <div className="w-[120px] h-[1px] bg-yellow-500 m-auto"></div>
@@ -73,7 +73,7 @@ const AddProduct = () => {
       {/* </form> */}      
 
     </form>
-    </>
+    </div>
   )
 }
 

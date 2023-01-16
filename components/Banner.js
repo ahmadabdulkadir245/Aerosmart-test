@@ -34,7 +34,7 @@ function Banner() {
     >
         {banners.map(banner => (
         <SwiperSlide key={banner.id} >
-            <div className='relative h-[30vh] w-[95%] m-auto rounded-md'>
+            <div className='relative h-[35vh] w-[95%] m-auto rounded-md'>
         <img src={banner.image} className='w-full h-full rounded-md object-cover ' />
 
             </div>
@@ -43,7 +43,7 @@ function Banner() {
     </Swiper>
 
   : 
-  <div className='relative h-[30vh] w-[95%] m-auto rounded-md bg-gray-400 overflow-hidden animate-pulse transition-all duration-500 linear'>
+  <div className='relative h-[35vh] w-[95%] m-auto rounded-md bg-gray-400 overflow-hidden animate-pulse transition-all duration-500 linear'>
   <div className='absolute h-full w-10  bg-white pulse overflow-hidden z-[40]'></div>
           <div className="flex  justify-center  space-x-3 mt-[25vh] m-auto bottom-[10px] ">
             <p className="w-[8px] h-[8px]  rounded-full bg-gray-500"></p>

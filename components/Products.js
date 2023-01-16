@@ -11,7 +11,6 @@ const Products = ({ id, title, price, description, category, image }) => {
     }, []);
   return (
     <>
-    <>
       {loading ? (
         <div className='relative flex flex-col  bg-white z-30 shadow-xl transition-all duration-500 linear rounded-md text-gray-500'>
           <Link href={`/shoes/${id}`}>
@@ -65,7 +64,7 @@ const Products = ({ id, title, price, description, category, image }) => {
         </div>
       )}
     </>
-  </>  )
+    )
 }
 
 export default Products

@@ -5,22 +5,26 @@ import { MdClear } from "react-icons/md";
 import SideBar from "./SideBar"
 import {  AiOutlineShoppingCart} from "react-icons/ai";
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import router from 'next/router'
+import { useRecoilState } from 'recoil';
+import { navState } from '../atoms/navHandler';
 
 const items = []
 function Navigation() {
-  const [openSideBar, setOpenSideBar] = useState(false);
+  const [openSideBar, setOpenSideBar] = useRecoilState(navState);
+  // const [openSideBar, setOpenSideBar] = useState(false);
   const sideBarHandler = () => {
       setOpenSideBar(true);
     };
-    const closeHandler = () => {
+    const closeNavHandler = () => {
       setOpenSideBar(false);
     };
   const [showSearch, setShowSearch] = useState(false);
   const showSearchHandeler = () => {
     setShowSearch(!showSearch);
   };
+
   return (
 <>
 {/* sidebar menu */}
@@ -34,7 +38,7 @@ function Navigation() {
       {openSideBar ? (
                   <MdClear
                     className='w-6 h-6 text-gray-500 lg:hidden transition-transform duration-500 ease-in-out'
-                    onClick={closeHandler}
+                    onClick={closeNavHandler}
                   />
                 ) : (
                   <HiOutlineMenuAlt3 className='w-6 h-6 text-gray-500 lg:hidden' onClick={sideBarHandler}/>

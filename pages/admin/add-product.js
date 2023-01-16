@@ -3,7 +3,7 @@ import Head from "next/head"
 const AddProduct = () => {
     const isUpdate = false
   return (
-    <div classname="mb-10">
+    <div classname="mt-20">
           <Head>
            {/* fonts import */}
            <link rel='preconnect' href='https://fonts.googleapis.com' />
@@ -13,6 +13,7 @@ const AddProduct = () => {
           />
 
       </Head>
+
     <form method="post" action="/admin/add-product" >
       <h2 className="text-center text-xl uppercase text-gray-500  my-5 [word-spacing: 10px] ">
         {isUpdate ? 'add product' : 'update product'}
@@ -57,21 +58,19 @@ const AddProduct = () => {
     <textarea cols={1} rows={8}  className="border-[1px] lg:border-[1px] rounded-lg md:rounded-full  border-gray-600 outline-none px-6 py-3 w-[90%]  m-auto flex my-6 lg:my-8" placeholder="description"></textarea>
       {isUpdate ? (
         <button
-          className='flex justify-center m-auto mt-5 lg:mt-5  bg-gray-500 w-56 rounded-full text-white  px-2 py-3 2xl:p-3 outline-none transition-all duration-300 ease-in-out hover:bg-[#ffcb05] 2xl:w-[300px] '
+          className='flex justify-center m-auto mt-5 lg:mt-5  bg-gray-500 w-56 rounded-full text-white  px-2 py-3 2xl:p-3 outline-none transition-all duration-300 ease-in-out hover:bg-[#ffcb05] 2xl:w-[300px] mb-20'
         //   onClick={updateDataHandler}
         >
           Update
         </button>
       ) : (
         <button
-          className='flex justify-center m-auto mt-5 lg:mt-5  bg-yellow-400 w-56 rounded-full text-white  px-2 py-3 2xl:p-3 outline-none transition-all duration-300 ease-in-out hover:bg-yellow-500 2xl:w-[300px]'
+          className='flex justify-center m-auto mt-5 lg:mt-5  bg-yellow-400 w-56 rounded-full text-white  px-2 py-3 2xl:p-3 outline-none transition-all duration-300 ease-in-out hover:bg-yellow-500 2xl:w-[300px] mb-20'
         //   onClick={addDataHandler}
         >
           Add
         </button>
       )}
-      {/* </form> */}      
-
     </form>
     </div>
   )

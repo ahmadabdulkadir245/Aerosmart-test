@@ -1,14 +1,17 @@
 import Link from "next/link"
 import {  useRecoilState } from "recoil"
 import { navState } from "../atoms/navHandler"
+import {useRouter} from 'next/router'
 
 function SideBarLink({Icon, title, path}) {
   const [openSideBar, setOpenSideBar] = useRecoilState(navState);
+  const router = useRouter();
   const closeNav = () => {
     setOpenSideBar(false)
+    router.push(path)
   }
   return (
-   <Link href={`/${path}`} onClick={closeNav}>
+   <div  onClick={closeNav}>
              <div className='text-lg'>
         <div className=' flex items-center space-x-3'>
         <Icon className='w-6 h-6 ' />
@@ -16,7 +19,7 @@ function SideBarLink({Icon, title, path}) {
         </div>
         <hr className='h-[0px] w-full mt-4 mb-2 bg-gray-500 '/>
         </div>
-   </Link>
+   </div>
   )
 }
 
